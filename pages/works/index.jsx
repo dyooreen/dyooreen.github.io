@@ -12,7 +12,7 @@ const Works = ({ projects }) => {
       <Head>
         <title>dyooreen - Works</title>
       </Head>
-      <div className="grid gap-6 border-1 border-violet rounded-2xl overflow-auto h-full">
+      <div className="grid gap-6 border-1 border-black rounded-2xl overflow-auto h-full">
         {projects.map(
           ({ id, slug, title, link, content, workType, cover, tags }, i) => {
             return (
@@ -48,12 +48,12 @@ const Works = ({ projects }) => {
                   </div>
                   <div
                     className={
-                      "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-[#002b36] rounded-2xl flex items-start text-white laptop:" +
+                      "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center    justify-center  text-5xl font-Roboto tracking-widest w-full bg-[#002b36] rounded-2xl flex items-start text-white laptop:" +
                       (i % 2 == 0 ? "mr-6" : "ml-6")
                     }
                   >
                     <div className="grid w-full">
-                      <div className="flex justify-between items-center  border-4 bg-[#002b36] border-violet  rounded-lg">
+                      <div className="flex justify-between items-center  border-4 bg-[#002b36] border-black  rounded-lg">
                         <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-[#002b36] rounded-lg">
                           {title}
                         </div>
@@ -63,7 +63,7 @@ const Works = ({ projects }) => {
                           </span>
                         </div>
                       </div>
-                      <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-auto border-violet border-4 rounded-lg my-6 overflow-auto">
+                      <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-auto border-black border-4 rounded-lg my-6 overflow-auto">
                         <p className="text-left text-base tracking-normal whitespace-pre-line">
                           <span className="flex">
                             {tags.split(",").map((i, j) => (

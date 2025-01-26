@@ -10,7 +10,7 @@ const Document = () => (
 
       <meta name="robots" content="index, follow" />
     </Head>
-    <body className="bg-[#595ead] overflow-hidden">
+    <body className="bg-[#59ad89] overflow-hidden">
       <Main />
       <NextScript />
       <Script id="google-analytics" strategy="afterInteractive">

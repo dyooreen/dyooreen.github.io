@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         <div className="laptop:hidden mobile:grid">
           <MobileMenu menu={menu} />
         </div>
-        <div className="h-full grid mobile:mx-6 border-violet rounded-2xl border-4  laptop:w-3/4 laptop:m-auto">
+        <div className="h-full grid mobile:mx-6 border-transparent rounded-2xl border-4  laptop:w-3/4 laptop:m-auto">
           <Component {...pageProps} />
         </div>
       </div>
